@@ -13,37 +13,38 @@
 
 <body>
     <div class="header">
-        
+
         <div class="header-main-row">
             <h1>Smart Cart</h1>
-            
+
             <div class="search-container">
-                <input type="text" placeholder="Search products">
+                <input type="text" placeholder="Search products" class="input">
                 <button class="btn">Search</button>
             </div>
-            
+
             <div class="navbar">
                 <a href="/">Home</a>
                 <a href="/">About</a>
                 <a href="/">Contact</a>
-                <p><i class="fa-regular fa-heart"></i></p>
-                <p><i class="fa-solid fa-cart-shopping"></i></p>
+                <!-- <p class="favorites"><i class="fa-regular fa-heart"></i></p> -->
+                <p class="cart"><i class="fa-solid fa-cart-shopping"></i></p>
             </div>
         </div>
 
         <div class="product-categories">
-            <button>All</button>
-            <button>Furniture</button>
-            <button>Electronics</button>
-            <button>Clothing</button>
+            <button class="all-products">All</button>
+            <button class="furniture">Furniture</button>
+            <button class="electronics">Electronics</button>
+            <button class="clothing">Clothing</button>
         </div>
-        
+
         <div class="main">
             <p>All Products</p>
             <div class="products-section">
-                
+
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=989"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=989"
                         alt="Airpods">
                     <p class="product-name">Airpods</p>
                     <p class="product-price">Rs.1000</p>
@@ -52,16 +53,19 @@
                 </div>
 
                 <div class="product">
-                    <img src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=813"
+                    <img class="product-img"
+                        src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=813"
                         alt="Headphones">
                     <p class="product-name">Headphones</p>
                     <p class="product-price">Rs.2500</p>
                     <p class="product-category">Electronics</p>
+                    
                     <button class="add-to-cart-btn">Add to cart</button>
                 </div>
-                 
-                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580"
+
+                <div class="product">
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580"
                         alt="Mobile Phone">
                     <p class="product-name">Mobile Phone</p>
                     <p class="product-price">Rs.60,000</p>
@@ -70,7 +74,8 @@
                 </div>
 
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
                         alt="Sofa Set">
                     <p class="product-name">Sofa Set</p>
                     <p class="product-price">Rs.40,000</p>
@@ -79,7 +84,8 @@
                 </div>
 
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1643558544531-bff73bbffc28?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1031"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1643558544531-bff73bbffc28?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1031"
                         alt="Center Table">
                     <p class="product-name">Center Table</p>
                     <p class="product-price">Rs.20,000</p>
@@ -89,7 +95,8 @@
 
 
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1572721546624-05bf65ad7679?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=773"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1572721546624-05bf65ad7679?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=773"
                         alt="Data Cable">
                     <p class="product-name">Data Cable</p>
                     <p class="product-price">Rs.1000</p>
@@ -99,7 +106,8 @@
 
 
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871"
                         alt="Bed Set">
                     <p class="product-name">Bed Set</p>
                     <p class="product-price">Rs.80,000</p>
@@ -108,7 +116,8 @@
                 </div>
 
                 <div class="product">
-                    <img src="https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580"
+                    <img class="product-img"
+                        src="https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580"
                         alt="Blue Kurti">
                     <p class="product-name">Blue Kurti</p>
                     <p class="product-price">Rs.5000</p>
@@ -117,7 +126,8 @@
                 </div>
 
                 <div class="product">
-                    <img src="https://plus.unsplash.com/premium_photo-1665664652383-2308d742943c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464"
+                    <img class="product-img"
+                        src="https://plus.unsplash.com/premium_photo-1665664652383-2308d742943c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=464"
                         alt="Jeans">
                     <p class="product-name">Jeans</p>
                     <p class="product-price">Rs.2000</p>
