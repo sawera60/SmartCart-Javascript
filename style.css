@@ -1,0 +1,260 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; 
+    color: #343a40;
+}
+
+/* --- Primary Color Definition --- */
+:root {
+    --primary-color: #e53935; /* Vibrant Red */
+    --secondary-color: #495057;
+    --text-color: #343a40;
+    --success-color: #28a745;
+    --light-grey: #e9ecef;
+}
+
+/* --- Header & Navigation Styling --- */
+.header {
+    background-color: #ffffff;
+    padding: 10px 40px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Container for all top-row elements */
+.header-main-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 10px; 
+}
+
+.header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2em; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Search Bar and Button Styles */
+.header .search-container {
+    display: flex;
+    flex-grow: 1; 
+    max-width: 450px; 
+    margin: 0 20px; 
+}
+
+.header input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px; 
+    border: 1px solid #ced4da;
+    border-right: none;
+    border-radius: 6px 0 0 6px; 
+    font-size: 0.95em;
+    outline: none;
+}
+
+.header .btn {
+    padding: 10px 18px; 
+    background-color: var(--primary-color); 
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header .btn:hover {
+    background-color: #c62828;
+}
+
+/* Navigation Bar Styles (Links and Icons) */
+.navbar {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 5px 8px; 
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    background-color: var(--light-grey);
+}
+
+.navbar p {
+    font-size: 1.3em; 
+    cursor: pointer;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+    padding: 3px; 
+}
+
+.navbar p:hover {
+    color: var(--primary-color); 
+    transform: scale(1.1);
+}
+
+/* --- Category Buttons Styling --- */
+.product-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0 15px 0; 
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.product-categories button {
+    padding: 8px 16px; 
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--light-grey); 
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.product-categories button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.product-categories button:first-child { 
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* --- Main Content Area (Product Display) --- */
+.main {
+    padding: 20px; 
+    max-width: 1200px;
+    margin: 20px auto; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #e0e0e0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.main > p { /* "All Products" heading */
+    font-size: 1.8em; 
+    font-weight: bold;
+    margin-bottom: 15px; 
+    color: var(--text-color);
+    border-bottom: 3px solid var(--primary-color); 
+    padding-bottom: 8px; 
+}
+
+/* Product Layout (Flexbox) */
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px; /* Slightly increased gap for 3 columns */
+    padding: 5px 0;
+    width: 100%; 
+}
+
+/* Product Card Styles */
+.product {
+    /* Calculate width for 3 products per line: (1200px - (2 * 25px gap)) / 3 = ~383.33px. 
+       We'll use a slightly smaller card width and let the gap handle the rest. */
+    flex: 0 0 auto;
+    width: 300px; /* Adjusted width to fit 3 cards with gaps in the 1200px max container */
+    border: 1px solid var(--light-grey);
+    padding: 15px; /* Slightly more padding for better look */
+    border-radius: 8px; 
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px; /* Increased vertical margin */
+}
+
+.product:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    border-radius: 6px;
+    width: 100%;
+    height: 220px; /* Slightly increased image height */
+    margin-bottom: 10px; 
+    object-fit: cover;
+}
+
+.product .product-name {
+    font-size: 1.2em; /* Slightly larger text */
+    margin: 5px 0;
+}
+
+.product .product-price {
+    color: var(--success-color);
+    font-size: 1.5em; /* Slightly larger price */
+    margin: 8px 0;
+}
+
+.product .product-category {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* --- Add to Cart Button Styling --- */
+.product .add-to-cart-btn {
+    /* Using the button tag styling now */
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 12px; /* Nicer padding */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700; /* Bold font */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle initial shadow */
+}
+
+.product .add-to-cart-btn:hover {
+    background-color: #c62828; /* Darker red on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.product .add-to-cart-btn:active {
+    background-color: #b71c1c; /* Darkest red when clicked */
+    transform: scale(0.98); /* Press down effect */
+}
